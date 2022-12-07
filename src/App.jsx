@@ -17,12 +17,22 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          count is {count}
         </p>
+      </div>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          Add 1
+        </button>
+        <button onClick={() => setCount((count) => count * 2)}>
+          Times 2
+        </button>         
+      </div>
+      <div className="card">
+        <button onClick={() => setCount((count) => count = 0)}>
+            Reset
+        </button>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
